@@ -21,5 +21,12 @@ TODO
       - Use a pre-configured code editor
 10. Creating React Projects Locally
     - Need to download [Node.js](https://nodejs.org/en)
+      - NPM commands
+        - `npm install`
+        - `npm start`
+    - VS Code
+      - Formatter: Prettier
 11. Using CodeSandbox for Reacy Development (no local setup required!)
+    - To create new project in CodeSandbox
+      - Just type react.new in your browser
 12. Module resources
