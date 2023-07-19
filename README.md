@@ -31,28 +31,78 @@ TODO
       - Just type react.new in your browser
 12. Module resources
 
-# Section 2
+# Section 2 - JavaScript refresher
 13. Module Introduction
 14. Starting Project
 15. Adding JavaScript to a page and how React projects differ
+    - Between `script` tags: `<script></script>`
+    - "defer" attributes
+      - execute JS tags after HTML tags are loaded
+      - can also use `type="module"`
+      - take note that in React, script tags should not be used because of "build process" in React.
 16. React projects use a build process
+    - this means that code being written is transformed
+      - like compiling?
+      - react-scripts library
 17. "import" and "export"
+    - `export`
+    - `default`
+    - `let`
 18. Revisiting variables and values
+    - `let`, `const` and `var`
 19. Revisiting operators
+    - `===`, `+`
 20. Revisiting functions and parameters
-    - Coding exercise 1: exercise: working with functions
+    - defining: `function greet() {console.log("Hello!")};`
+    - calling: `greet();`
+##### Coding exercise 1: exercise: working with functions
 21. Arrow functions
+    - `() => {};`
+    - If `=>` is ommited `function` should not be used.
 22. More on the arrow function syntax
+    - if arrow functions takes only 1 parameter you may omit parenthesis
+    - instead of `(userName) => { ... }` this could be written as `userName => { ... }`
+    - but if no parameters or more than 1, parenthesis should be present.
+    - if arrow function don't have other logic than return `{}` can be omitted.
+    - instead of `number => { return number * 3};` this could be `number => return number * 3;`
+    - if returning a JS object to be valid it could be written like this `number => ({ age: number });` which `{ age: number }` is the JS object that will be returned.
 23. Revisiting objects and classes
+    - sample of object: `const user = { name: 'Max', age: 34 };`
+    - to access: `user.name`
+    - functions can also be in the objects
+    - example: `const user = { name: 'Max', age: 34, greet() { console.log("Hi!") } };`
+    - to access: `user.greet();`
+    - Class or "blueprint"
+    - ```
+      class User {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        greet() {
+          console.log("Hi!");
+        }
+      }
+
+      const user1 = new User("Manuel", 35);
+      console.log(user1);  // User {name: "Manuel", age: 35, constructor: object}
+      user1.greet();  // Hi!
+      ```
 24. Arrays and array methods like map()
-    - Coding exercise 2: exercise: array methods
-25. Destructuring
-26. Destructuting in function parameter lists
-27. The spread operator
-28. Revisiting control structures
-29. Manipulating the DOM - not the React
-30. Using functions as values
-31. Defining functions inside of functions
-32. Reference vs primitive values
-33. Next-Gen JavaScript - summary
-34. JS array functions
+    - `[ ... ]`
+    - example: `const hobbies = ["Sports", "Cooking", "Reading"]`
+    - to access: `hobbies[0]` which `0` is the index
+    - there are different methods that can be use in `array`
+        - check: `.findIndex()` and `.map()`
+##### Coding exercise 2: exercise: array methods
+1.   Destructuring
+2.   Destructuting in function parameter lists
+3.   The spread operator
+4.   Revisiting control structures
+5.   Manipulating the DOM - not the React
+6.   Using functions as values
+7.   Defining functions inside of functions
+8.   Reference vs primitive values
+9.   Next-Gen JavaScript - summary
+10.  JS array functions
