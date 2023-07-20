@@ -159,10 +159,13 @@ TODO
 33.   Next-Gen JavaScript - summary
 34.   JS array functions
 
-# Section 2 - JavaScript refresher
+# Section 3 - React basics and working with components
 36. Module Introduction
 37. What are components/ And why is React all about them?
+  - Reusability
 38. React code is written in a "declarative way"!
+  - Declarative approach (desired target)
+  - without using DOM
 39. Creating anew React project.
 40. The starting project
 41. Analyzing a standard React project
