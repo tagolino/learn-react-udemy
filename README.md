@@ -107,13 +107,54 @@ TODO
         return numberArray.map(number => ({ val: number }));
     }
     ```
-1.   Destructuring
-2.   Destructuting in function parameter lists
-3.   The spread operator
-4.   Revisiting control structures
-5.   Manipulating the DOM - not the React
-6.   Using functions as values
-7.   Defining functions inside of functions
-8.   Reference vs primitive values
-9.   Next-Gen JavaScript - summary
-10.  JS array functions
+25.   Destructuring
+  - `const [firstName, lastName] = ["Max", "X"];`
+  - `const { name, age } = { name: "Max", age: 35 };`
+26.   Destructuting in function parameter lists
+27.   The spread operator
+  - `const mergedHobbies = [...hobbies, ...newHobbies];`
+28.   Revisiting control structures
+  - `for (const hobby of hobbies) {console.log(hobby)};`
+29.   Manipulating the DOM - not the React
+  - DOM is something like this:
+  - `const list = document.querySelector("ul"); list.remove();`
+30.   Using functions as values
+  - ```
+    function handleTimeout() {
+      console.log("Time out!");
+    }
+
+    const handleTimeout2 = () => {
+      console.log("Time out ... again!");
+    };
+
+    setTimeout(handleTimeout, 2000);
+    setTimeout(handleTimeout2, 3000);
+    setTimeout(() => {
+      console.log("More timing out ...");
+    }, 4000);
+
+    function greeter(greetFn) {
+      greetFn();
+    };
+
+    greeter(() => console.log("Hi!"));
+    ```
+31.   Defining functions inside of functions
+  - ```
+    function init() {
+      function greet() {
+        console.log("Hi!);
+      }
+
+      greet();  // OK
+    }
+
+    greet();  // Not OK. Cannot be called outside the scope of main function
+    init();  // OK
+    ```
+32.   Reference vs primitive values
+  - array and objects is a reference values
+  - string, int etc is primitive values
+33.   Next-Gen JavaScript - summary
+34.   JS array functions
