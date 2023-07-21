@@ -180,14 +180,14 @@ TODO
 47. Outputting dynamic data and working with expression in JSX
 48. Passing data via "props"
 ##### Coding exercise 5: exercise: passing data via "props"
-1.  Alternative ways of passing and receiving / handling "props"
-2.  Adding "normal" Javascript logic to components
-3.  Splitting components into multiple components
+49. Alternative ways of passing and receiving / handling "props"
+50. Adding "normal" Javascript logic to components
+51. Splitting components into multiple components
 ##### Assingment 1: Time to practice: React and Component basics
-1.  The concept of "Composition" ("children props")
+52. The concept of "Composition" ("children props")
 ##### Coding exercise 6: exercise: Component composition
-1.  A first summary
-2.  A closer look at JSX
-3.  Organizing component files
-4.  An alternative function syntax
+53. A first summary
+54. A closer look at JSX
+55. Organizing component files
+56. An alternative function syntax
 ##### Quiz 1: Learning check: React basics, components, props and JSX
