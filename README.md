@@ -179,8 +179,10 @@ TODO
   - CSS files should be created in the same location where JS should use it.
 47. Outputting dynamic data and working with expression in JSX
 48. Passing data via "props"
+  - `props`
 ##### Coding exercise 5: exercise: passing data via "props"
 49. Alternative ways of passing and receiving / handling "props"
+  - can also use destructuring `function ExpenseItem({ title, amount, date }) { ... };`
 50. Adding "normal" Javascript logic to components
 51. Splitting components into multiple components
 ##### Assingment 1: Time to practice: React and Component basics
