@@ -187,6 +187,8 @@ TODO
 51. Splitting components into multiple components
 ##### Assingment 1: Time to practice: React and Component basics
 52. The concept of "Composition" ("children props")
+  - discussed avoiding code duplication.
+  - take note of "composition"
 ##### Coding exercise 6: exercise: Component composition
 53. A first summary
 54. A closer look at JSX
