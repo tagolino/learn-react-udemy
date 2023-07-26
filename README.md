@@ -191,7 +191,24 @@ TODO
   - take note of "composition"
 ##### Coding exercise 6: exercise: Component composition
 53. A first summary
+  - React code syntax and JSX
+  - Working with components
+    - Splitting code using components
+    - in the end, what will be displayed in the UI is the same
+  - Working with data
 54. A closer look at JSX
+  - Today, no need to `import React from "react";` in each file.
 55. Organizing component files
 56. An alternative function syntax
+  - instead of `function functionName () {...};` we can do `const functionName = () => { ... };`
+  - this is just a JavaScript thing not a React specific
 ##### Quiz 1: Learning check: React basics, components, props and JSX
+
+# Section 4 - Time to practice: component basics
+58. Module introduction
+59. The starting project and your tasks
+60. Exercise hints
+61. Outputting key concepts data
+62. Identifying possible components
+63. Creating and using a custom component
+64. Outsourcing concept items into a reusable component
