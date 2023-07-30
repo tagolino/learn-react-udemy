@@ -1,0 +1,23 @@
+.concept:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+  box-shadow: 0 2px 30px rgba(234, 78, 240, 0.4);
+}
+
+.concept img {
+  width: 6rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.concept h2 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.concept p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
