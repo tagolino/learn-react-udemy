@@ -212,3 +212,5 @@ TODO
 62. Identifying possible components
 63. Creating and using a custom component
 64. Outsourcing concept items into a reusable component
+
+# Section 5 - React state and working with events
