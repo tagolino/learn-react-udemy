@@ -214,3 +214,4 @@ TODO
 64. Outsourcing concept items into a reusable component
 
 # Section 5 - React state and working with events
+# Section 6 - Rendering lists and condition content
