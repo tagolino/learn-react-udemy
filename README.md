@@ -211,7 +211,7 @@ TODO
 61. Outputting key concepts data
 62. Identifying possible components
 63. Creating and using a custom component
+  - Should've seperate components for header
 64. Outsourcing concept items into a reusable component
-
 # Section 5 - React state and working with events
 # Section 6 - Rendering lists and condition content
