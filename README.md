@@ -214,4 +214,7 @@ TODO
   - Should've seperate components for header
 64. Outsourcing concept items into a reusable component
 # Section 5 - React state and working with events
+67. Listening to events and working with event handlers
+##### Exercise 7: Exercise: Listening to events
+68. 
 # Section 6 - Rendering lists and condition content
