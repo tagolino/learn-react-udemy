@@ -28,18 +28,47 @@ function Expenses(props) {
     return expense.date.getFullYear().toString() === yearFilter;
   })
 
+  let expenseContent = <p>No expenses found!</p>
+
+  if (filteredExpenses > 0) {
+    expenseContent = filteredExpenses.map((expense) => (
+      <ExpenseItem
+        key={expense.id}
+        title={expense.title}
+        amount={expense.amount}
+        date={expense.date}
+      />)
+    )
+  }
+
   return (
     <Card className="expenses">
       <ExpensesFilter selected={yearFilter} onExpensesFilter={expensesFilterHandler} />
       {/* <span>Data for year {filterInfoText} are hidden!</span> */}
-      {filteredExpenses.map((expense) => (
+
+      {/* Rendering conditional output approach 1 */}
+      {/* {filteredExpenses.length === 0 ? <p>No expenses found!</p> : filteredExpenses.map((expense) => (
         <ExpenseItem
           key={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
         />)
-      )}
+      )} */}
+
+      {/* Rendering conditional output approach 2 */}
+      {/* {filteredExpenses.length === 0 && <p>No expenses found!</p>}  // if the first condition is met this will render the 2nd condition
+      {filteredExpenses.length > 0 && filteredExpenses.map((expense) => (
+        <ExpenseItem
+          key={expense.id}
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+        />)
+      )} */}
+
+      {/* Rendering conditional output approach 3 */}
+      {expenseContent}
     </Card>
   );
 }
