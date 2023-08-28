@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Expenses.css";
 import Card from "./Card";
 import ExpensesFilter from "./ExpensesFilter";
-import ExpenseItem from "./ExpenseItem";
+import ExpensesList from "./ExpensesList";
 
 function Expenses(props) {
   const [yearFilter, setYearFilter] = useState("2020");
@@ -28,18 +28,19 @@ function Expenses(props) {
     return expense.date.getFullYear().toString() === yearFilter;
   })
 
-  let expenseContent = <p>No expenses found!</p>
+  // commented in 90. Additional Return Statement
+  // let expenseContent = <p>No expenses found!</p>
 
-  if (filteredExpenses > 0) {
-    expenseContent = filteredExpenses.map((expense) => (
-      <ExpenseItem
-        key={expense.id}
-        title={expense.title}
-        amount={expense.amount}
-        date={expense.date}
-      />)
-    )
-  }
+  // if (filteredExpenses > 0) {
+  //   expenseContent = filteredExpenses.map((expense) => (
+  //     <ExpenseItem
+  //       key={expense.id}
+  //       title={expense.title}
+  //       amount={expense.amount}
+  //       date={expense.date}
+  //     />)
+  //   )
+  // }
 
   return (
     <Card className="expenses">
@@ -66,9 +67,11 @@ function Expenses(props) {
           date={expense.date}
         />)
       )} */}
-
+      
       {/* Rendering conditional output approach 3 */}
-      {expenseContent}
+      {/* {expenseContent} // commented in 90. Additional Return Statement */}
+
+      <ExpensesList items={filteredExpenses} />
     </Card>
   );
 }
