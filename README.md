@@ -280,7 +280,7 @@ TODO
 
 86. Redering List of data
 87. Using Stateful Lists
-88. Understandin "keys"
+88. Understanding "keys"
 89. Outputting conditional content
 90. Adding Conditional Return Statements
 91. Adding a Chart
