@@ -4,6 +4,7 @@ import "./Expenses.css";
 import Card from "./Card";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
   const [yearFilter, setYearFilter] = useState("2020");
@@ -70,7 +71,7 @@ function Expenses(props) {
       
       {/* Rendering conditional output approach 3 */}
       {/* {expenseContent} // commented in 90. Additional Return Statement */}
-
+      <ExpensesChart expenses={filteredExpenses} />
       <ExpensesList items={filteredExpenses} />
     </Card>
   );
